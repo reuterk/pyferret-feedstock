@@ -24,22 +24,27 @@ requirements:
   build:
     - python
     - numpy
+    - jpeg 8d
+    - glib 2.43.*
     - netcdf-fortran 4.4.*
-    - cairo 1.14.*
-    - pango 1.40.*
-    - pixman 0.34.*
+    - cairo 1.12.*
+    - pango 1.39.*
+    - pixman 0.32.*
     - gcc  # [not win]
   run:
     - python
     - numpy
+    - jpeg 8d
+    - glib 2.43.*
     - netcdf-fortran 4.4.*
-    - cairo 1.14.*
-    - pango 1.40.*
-    - pixman 0.34.*
-    - pyqt 5.6.*  # [not osx]
-    - pyqt 4.11.*  # [osx]
+    - cairo 1.12.*
+    - pango 1.39.*
+    - pixman 0.32.*
+    #- pyqt 5.6.*  # [not osx]
+    #- pyqt 4.11.*  # [osx]
+    - pyqt 4.11.*
     - libgcc  # [linux]
-    - libgfortran  # [osx]
+    #- libgfortran  # [osx]
 
 test:
   imports:
