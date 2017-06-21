@@ -1,4 +1,7 @@
-{% set version = "7.1.0" %}
+#{% set version = "7.1.0" %}
+#{% set quality = "final" %}
+{% set version = "7.1.1" %}
+{% set quality = "beta" %}
 
 package:
   name: pyferret
@@ -6,8 +9,8 @@ package:
 
 source:
   fn: pyferret-{{ version }}.tar.gz
-  url: https://github.com/NOAA-PMEL/PyFerret/archive/v{{ version }}-final.tar.gz
-  sha256: a3c2823068d2b20d69233f7d93653ecf10ff006e4663a8d3a8441db644cbe4c6
+  url: https://github.com/NOAA-PMEL/PyFerret/archive/v{{ version }}-{{ quality }}.tar.gz
+  #sha256: a3c2823068d2b20d69233f7d93653ecf10ff006e4663a8d3a8441db644cbe4c6
   patches:
     - site_specific.patch  # [not win]
     - linux-platform_specific.patch  # [linux]
